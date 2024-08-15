@@ -1,0 +1,49 @@
+@import url('https://unpkg.com/@uiw/reset.css/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet');
+h1{
+    font-family: "New Amsterdam", sans-serif ;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+header{
+    background-color: rgb(236, 117, 32);
+}
+main{
+    background-color: rgb(0, 110, 255);
+}
+aside{
+    background-color: rgb(255, 223, 80);
+}
+footer{
+    background-color: rgb(226, 43, 43);
+}
+/*Diseño responsivo con media queries*/
+@media (max-width: 600px) {
+    body {
+        background-color: rgb(174, 253, 158);
+    }
+}
+#container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 1rem;grid-template-areas: 
+    "cabeza cabeza cabeza"
+    "principal principal lado"
+    "pie pie pie"
+    ;
+}
+header{
+    grid-area:  cabeza;
+}
+main{
+    grid-area: principal;
+}
+aside {
+    grid-area: lado;
+}
+footer{
+    grid-area: pie;
+}
