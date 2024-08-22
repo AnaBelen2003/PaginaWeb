@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*columnas*/
+figcaption {
+    font-size: .6rem;
+}
+ 
+p, li{
+    line-height: 1,6;
+}
+
+.columnas {
+    columns: 3 400px;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.clip {
+    clip-path: polygon(50% 16%, 67% 5%, 83% 0, 95% 4%, 100% 19%, 100% 40%, 83% 67%, 51% 100%, 18% 66%, 0 39%, 0 18%, 5% 5%, 19% 0, 35% 6%);
+}
+.clip-otro {
+    width: 50%;
+    float: left;
+    clip-path:polygon(51% 15%, 81% 8%, 94% 23%, 58% 95%, 46% 95%, 3% 28%, 15% 8%); 
+    shape-outside: polygon(51% 15%, 81% 8%, 94% 23%, 58% 95%, 46% 95%, 3% 28%, 15% 8%); 
+}
