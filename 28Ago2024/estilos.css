@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+main{
+    padding: 5rem;
+    border: 10px; color: blueviolet;
+    margin: 5rem;
+}
+/*Ejemplo de class y id*/
+img{
+    object-fit: cover;
+    width: 100%;
+}
+.parrafo {
+    line-height: 1,5;
+    color: rgb(226, 43, 180);
+
+}
+/* Css grid, mi reticula*/
+body{
+    background-color: rgb(149, 243, 144);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+main{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 2rem;
+    background-color: rgb(255, 149, 0);
+}
+
+header{
+    background-color: rgb(238, 240, 140);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 1rem;
+}
+#logoheader{
+    width: 120px;
+}
+footer{
+    background-color: rgb(50, 115, 235);
+    padding: 2rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/*Estilos tipográficos*/
+h1{
+    font-family: "six caps", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    
+}
+
+
+header li{
+    list-style: none;
+    display: inline-block;
+    padding: 1rem 1rem;
+}
+header a :hover{
+    color: aquamarine;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*columnas*/
+figcaption {
+    font-size: .6rem;
+}
+ 
+p, li{
+    line-height: 1,6;
+}
+
+.columnas {
+    columns: 3 400px;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
