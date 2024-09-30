@@ -1,0 +1,60 @@
+@import url('https://unpkg.com/@uiw/reset.css/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet');
+h1{
+    font-family: "Lilita One";
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+header{
+    background-color: rgb(183, 127, 235);
+}
+main{
+    background-color: rgb(245, 206, 109);
+}
+aside{
+    background-color: rgb(160, 232, 208);
+}
+footer{
+    background-color: rgb(244, 144, 172);
+}
+
+
+
+/* Diseño responsivo con media quieres */
+
+@media (max-width: 600px) {
+    body {
+        background-color: rgb(236, 158, 236);
+    }
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 1rem;grid-template-areas:
+    "cabeza cabeza cabeza"
+    "principal primncipal lado"
+    "pie pie pie"
+    ;
+}
+header {
+    grid-area: cabeza;
+}
+main {
+    grid-area: principal;
+}
+aside {
+    grid-area: lado;
+}
+footer {
+    grid-area: pie;
+}
+
+
+@media (main-width:) {
+    body {
+        background-color: rgb(186, 237, 159);
+    }
+}
